@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 Free Software Foundation, Inc.
+ * Copyright 2023 Free Software Foundation, Inc.
  *
  * This file is part of GNU Radio
  *
@@ -14,7 +14,7 @@
 /* BINDTOOL_GEN_AUTOMATIC(1)                                                       */
 /* BINDTOOL_USE_PYGCCXML(0)                                                        */
 /* BINDTOOL_HEADER_FILE(source.h)                                        */
-/* BINDTOOL_HEADER_FILE_HASH(d1a3d9ea3d815fe4f18acc3eef21f1b6)                     */
+/* BINDTOOL_HEADER_FILE_HASH(8eed9451c1834118c28118da45bd358e)                     */
 /***********************************************************************************/
 
 #include <pybind11/complex.h>
@@ -332,6 +332,7 @@ void bind_source(py::module& m)
             py::arg("enabled"),
             D(source,set_biast)
         )
+
 
         .def("get_biast",&source::get_biast,
             D(source,get_biast)
