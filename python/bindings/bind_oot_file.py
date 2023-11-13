@@ -19,9 +19,7 @@ parser.add_argument(
     '--filename', help="File to be parsed")
 
 parser.add_argument(
-    '--defines', help='Set additional defines for precompiler', default=(), nargs='*')
-parser.add_argument(
-    '--include', help='Additional Include Dirs, separated', default=(), nargs='*')
+    '--include', help='Additional Include Dirs, separated', default=(), nargs='+')
 
 parser.add_argument(
     '--status', help='Location of output file for general status (used during cmake)', default=None
